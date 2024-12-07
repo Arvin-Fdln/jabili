@@ -1,0 +1,361 @@
+        /* Scroll-to-Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f4683f;  /* Color like the "Order Now" button */
+            color: white;
+            font-size: 24px;
+            width: 50px;  /* Adjust width */
+            height: 50px; /* Adjust height */
+            border-radius: 50%;  /* Makes it a circle */
+            text-align: center;
+            line-height: 50px;  /* Centers the symbol vertically */
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .scroll-to-top:hover {
+            background-color: #d1572f;  /* Darker shade on hover */
+        }
+
+        /* Custom Styles */
+        .navbar {
+            background-color: #f43f3f !important;
+            border-bottom: 4px solid orange;
+        }
+        .nav-wrapper .brand-logo img {
+            height: 56px;
+        }
+        .nav-wrapper .right a {
+            color: white !important;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .order-now {
+            background-color: orange !important;
+            border-radius: 20px;
+            padding: 0 15px;
+            transition: all 0.3s ease; /* Smooth transition for hover */
+            box-shadow: 0 0 0px rgba(255, 165, 0, 0.8);
+        }
+
+        .order-now:hover {
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+            transform: scale(1.05); /* Slightly increase the size */
+        }
+        
+        /* Click effect */
+        .order-now:active {
+            transform: scale(0.95); /* Shrink slightly */
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.8); /* Adjust glow */
+        }
+
+        .hero-section {
+            background: rgb(106,6,6);
+            background: linear-gradient(27deg, rgba(106,6,6,1) 0%, rgba(244,63,63,1) 50%, rgba(120,9,9,1) 100%);            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-section .container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: "Mochiy Pop P One", sans-serif;
+            font-size: 3.5rem;
+            color: white;
+        }
+
+        .hero-section p {
+            font-family: "Mochiy Pop P One", sans-serif;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .hero-image img {
+            width: 100%; /* Make the image take up 100% of the width of its container */
+            height: auto; /* Maintain the aspect ratio */
+            object-fit: cover; /* Optional: ensures the image covers the container, without stretching */
+          }
+
+        .hero-section .btn.order-now {
+            background-color: rgb(45, 82, 175);
+        }
+
+        .hero-section .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-section img {
+            max-width: 400px;
+            height: auto;
+        }
+
+        .downloadbutton {
+            display: inline-block;
+            border-radius: 7px;
+            border: none;
+            background: #1875FF;
+            color: white;
+            font-family: inherit;
+            text-align: center;
+            font-size: 13px;
+            box-shadow: 0px 14px 56px -11px #1875FF;
+            width: 10em;
+            padding: 1em;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+        
+        .downloadbutton span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.4s;
+        }
+        
+        .downloadbutton span:after {
+            content: 'for free';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.7s;
+        }
+        
+        .downloadbutton:hover span {
+            padding-right: 3.55em;
+        }
+        
+        .downloadbutton:hover span:after {
+            opacity: 4;
+            right: 0;
+        }
+        
+        /* Featured Menu Section */
+        .featured-menu {
+            background: rgb(106,6,6);
+            background: linear-gradient(214deg, rgba(106,6,6,1) 0%, rgba(244,102,63,1) 50%, rgba(120,9,9,1) 100%);
+            padding: 50px 0;
+            color: white;
+        }
+
+        .featured-menu .section-title {
+            font-size: 2.5rem;
+            font-family: 'Mochiy Pop P One', sans-serif;
+            margin-bottom: 40px;
+        }
+
+        /* Menu Card Styling */
+        .menu-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+            height: 350px; /* Ensures uniform height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional */
+        }
+
+        .menu-card img {
+            width: 150px; /* Adjust image size */
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .menu-card h5 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .menu-card p {
+            font-size: 1rem;
+            margin: 0 10px;
+            line-height: 1.4;
+        }
+
+        /* Make cards clickable */
+        .menu-card-link {
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit the text color of the card */
+            display: block; /* Ensures the entire card is clickable */
+        }
+
+        /* Hover effect for Featured Menu cards */
+        .menu-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05); /* Slightly enlarges the card */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adds shadow on hover */
+        }
+
+        /* Exclusive Promo Section */
+        .exclusive-promo {
+            padding: 50px 0;
+            background-color: #f5f5f5;
+        }
+
+        .exclusive-promo .section-title {
+            font-size: 2.5rem;
+            font-family: 'Mochiy Pop P One', sans-serif;
+            margin-bottom: 40px;
+            color: #800000;
+        }
+
+        .promo-img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Optional: Rounded corners */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+        
+        .promo-img:hover {
+            transform: scale(1.05); /* Slightly enlarges the image on hover */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+        }
+        
+        .section-title {
+            font-family: 'Mochiy Pop P One', sans-serif; /* Example font, adjust as needed */
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            border-top: 3px solid orange;
+        }
+
+        .footer-copyright {
+            border-top: 1px solid orange;
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .popup-overlay.show {
+            display: flex;
+        }
+    
+        /* Card styles (from the provided CSS) */
+        .popup-overlay .card {
+            max-width: 350px;
+            background-color: rgb(7 16 45);
+            background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+            background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid rgb(84 90 106);
+            position: relative;
+        }
+    
+        .popup-overlay .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    
+        /* Rest of the provided CSS remains the same */
+        .popup-overlay .small-text, .popup-overlay .title, .popup-overlay .desc {
+            font-weight: 600;
+        }
+        .popup-overlay .title, .popup-overlay .desc {
+            margin: 8px 0;
+        }
+        .popup-overlay .small-text {
+            color: #488aec;
+            font-size: 14px;
+        }
+        .popup-overlay .title {
+            color: #fff;
+            font-size: 26px;
+            line-height: 26px;
+        }
+        .popup-overlay .desc {
+            color: rgb(151 153 167);
+            font-size: 13px;
+        }
+        .popup-overlay .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .popup-overlay .button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            padding: 6px;
+            text-decoration: none;
+        }
+        .popup-overlay .button:first-child {
+            box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+            background-color: #488aec;
+        }
+        .popup-overlay .button:last-child {
+            box-shadow: 0 4px 6px -1px #0b162531, 0 2px 4px -1px #0e192b17;
+            background-color: #fff;
+        }
+        .popup-overlay .icon {
+            height: 25px;
+            width: 25px;
+        }
+        .popup-overlay .icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        .popup-overlay .icon svg:last-child {
+            fill: #000
+        }
+        .popup-overlay .button-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 8px;
+        }
+        .popup-overlay .button-text span:first-child {
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .popup-overlay .google span:first-child {
+            color: rgb(219 206 253);
+        }
+        .popup-overlay .apple span:first-child {
+            color: rgb(81 87 108);
+        }
+        .popup-overlay .google span:last-child {
+            color: #fff;
+            font-weight: 800;
+        }
+        .popup-overlay .apple span:last-child {
+            color: #000;
+            font-weight: 800;
+        }

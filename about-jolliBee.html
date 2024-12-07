@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>About Jollibee</title>
+    <link rel="icon" href="Jollibee_logo.svg.ico" type="x-icon">
+
+    <style>
+        /* Custom styles for About page */
+        .about-header {
+            background: linear-gradient(to right, #D32F2F, #B71C1C);
+            color: white;
+            padding: 20px 0 !important;
+            text-align: center;
+        }
+    
+        .about-section {
+            padding: 30px 0;
+        }
+    
+        .about-section .row {
+            display: flex;
+            align-items: center;
+        }
+    
+        .about-section h3 {
+            color: #D32F2F;
+            margin-bottom: 20px;
+        }
+    
+        .about-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    
+        @media (max-width: 992px) {
+            .about-section .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (inherited from homepage) -->
+    <nav class="navbar">
+        <div class="nav-wrapper container">
+            <a href="homepage.html" class="brand-logo">
+                <img src="img/jollibee.png" alt="Jollibee Logo">
+            </a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://www.jollibee.com.ph/delivery/">Delivery</a></li>
+                <li><a href="https://www.jollibeedelivery.com/store-selection">Locations</a></li>
+                <li><a href="https://www.jollibee.com.ph/menu/">Menu</a></li>
+                <li><a href="https://www.jollibeedelivery.com/home" class="btn order-now">order-now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Navigation for mobile view -->
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="https://www.jollibee.com.ph/delivery/">Delivery</a></li>
+        <li><a href="https://www.jollibeedelivery.com/store-selection">Locations</a></li>
+        <li><a href="https://www.jollibee.com.ph/menu/">Menu</a></li>
+        <li><a href="https://www.jollibeedelivery.com/home" class="btn order-now">Order Now</a></li>
+    </ul>
+
+    <!-- About Header -->
+    <div class="about-header" style="padding: 20px 0;">
+        <div class="container">
+            <h2>About Jollibee</h1>
+        </div>
+    </div>
+
+    <!-- Company Information Section -->
+    <section class="about-section container">
+        <div class="row">
+            <div class="col s12">
+                <p>Jollibee is the largest fast food chain brand in the Philippines, operating a network of more than 1,500 stores in 17 countries. A dominant market leader in the Philippines, Jollibee enjoys the lion’s share of the local market that is more than all the other multinational fast food brands in PH combined. With a strict adherence to the highest standards of food quality, service and cleanliness, Jollibee serves great-tasting, high-quality and affordable food products to include its superior-tasting Chickenjoy, mouth-watering Yumburger, and deliciously satisfying Jolly Spaghetti among other delicious products.
+
+                    Jollibee has embarked on an aggressive international expansion plan, with more than 270 international branches in the United States, Canada, Hong Kong, Macau, Brunei, Vietnam, Singapore, Malaysia, Saudi Arabia, United Arab Emirates, Qatar, Oman, Kuwait, Bahrain, Italy, Spain, and in the United Kingdom.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Company Section -->
+    <section class="about-section container">
+        <div class="row valign-wrapper">
+            <div class="col s12 m6">
+                <img src="img/About-Jollibee.jpg" class="responsive-img materialboxed" alt="Jollibee Store">
+            </div>
+            <div class="col s12 m6">
+                <h3>Our Business</h3>
+                <p>Jollibee Foods Corporation’s (“JFC” or the “Company”) core business is the development, operation and franchising of its quick-service restaurant brands. It offers a wide variety of affordable and delicious dishes and great tasting food prepared to satisfy customers of all ages and from all walks of life.
+
+                    Food quality, service, price-value relationship, store location and ambiance, and efficient operations continue to be critical elements of the Company’s success in the quick-service restaurant industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food, Service, and Cleanliness Section -->
+    <section class="about-section container">
+        <div class="row valign-wrapper">
+            <div class="col s12 m6">
+                <h3>Our Food, Service, and Cleanliness (FSC) Standard</h3>
+                <p>Jollibee’s phenomenal growth owes much to its strict and committed adherence to high standards as symbolized by “F.S.C.”: Food (F) served to the public must meet the company’s excellence standards or it will not be served at all; the Service (S) must be fast and courteous; Cleanliness (C), from kitchen to utensils, must always be maintained. Jollibee is proud of its employees who carry out their jobs.</p>
+            </div>
+            <div class="col s12 m6">
+                <img src="img/FSC-STANDARD.jpg" class="responsive-img materialboxed" alt="Jollibee Food, Service, and Cleanliness">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (inherited from homepage) -->
+    <footer class="page-footer red darken-4">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col l3 s12">
+                    <a href="homepage.html" class="brand-logo">
+                        <img src="img/jollibee.png" alt="Jollibee Logo" style="max-width: 150px;">
+                    </a>
+                </div>
+
+                <!-- Our Socials Section -->
+                <div class="col l3 s12">
+                    <h5 class="white-text">Our Socials</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/JollibeePhilippines/" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://x.com/Jollibee" class="grey-text text-lighten-3"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/jollibee/?hl=en" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- How to Order Section -->
+                <div class="col l3 s12">
+                    <h5 class="white-text">How to Order</h5>
+                    <ul>
+                        <li><a href="https://www.jollibeedelivery.com/store-selection" class="grey-text text-lighten-3">Delivery</a></li>
+                        <li><a href="https://www.jollibee.com.ph/menu/" class="grey-text text-lighten-3">Menu</a></li>
+                        <li><a href="https://www.jollibeedelivery.com/home" class="grey-text text-lighten-3">Order Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us Section -->
+                <div class="col l3 s12">
+                    <h5 class="white-text">About Us</h5>
+                    <ul>
+                        <li><a href="redirecting.html" class="grey-text text-lighten-3">About Jollibee</a></li>
+                        <li><a href="redirecting2.html" class="grey-text text-lighten-3">About Our Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Copyright Section -->
+        <div class="footer-copyright">
+            <div class="container center-align">
+                <span class="grey-text text-lighten-4">© 2024 Jollibee. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JS and jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        // Initialize Side Navigation
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidenav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenav);
+        });
+
+        $('.materialboxed').materialbox();
+
+    </script>
+</body>
+</html>

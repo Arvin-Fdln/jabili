@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Jollibee</title>
+    <link rel="icon" href="Jollibee_logo.svg.ico" type="x-icon">
+</head>
+<body>
+
+    <!-- Scroll-to-Top Button -->
+    <a href="#" class="scroll-to-top" id="scrollToTop">^</a>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-wrapper container">
+            <a href="homepage.html" class="brand-logo">
+                <img src="img/jollibee.png" alt="Jollibee Logo">
+            </a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="https://www.jollibee.com.ph/delivery/">Delivery</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="https://www.jollibee.com.ph/menu/">Menu</a></li>
+                <li><a href="https://www.jollibeedelivery.com/home" class="btn order-now">order-now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Navigation for mobile view -->
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="https://www.jollibee.com.ph/delivery/">Delivery</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="https://www.jollibee.com.ph/menu/">Menu</a></li>
+        <li><a href="https://www.jollibeedelivery.com/home" class="btn order-now">Order Now</a></li>
+    </ul>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <!-- Text Section -->
+                <div class="col s12 m6 l6">
+                    <h1>Bringing joy to you</h1>
+                    <p>Have your Jollibee favorites delivered right to your doorstep!</p>
+                    <a href="https://www.jollibeedelivery.com/home" class="btn order-now">Order Now</a>
+
+                     <!-- New Button to Trigger Pop-up -->
+                     <button class="downloadbutton" id="downloadAppBtn" style="vertical-align:middle"><span>Download</span></button>                
+                </div>
+
+                <!-- Image Section -->
+                <div class="col s12 m6 l6 hero-image">
+                    <img src="img/Chicken Joy bucket cat.png" alt="Chicken Joy Bucket">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay" id="downloadPopup">
+        <div class="card">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <span class="small-text">Download Now!</span>
+            <span class="title">Download our mobile application.</span>
+            <span class="desc">Download Jollibee mobile app for IOS & Android to manage your online orders and track promos.</span>
+            <div class="buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.tillster.jb_ph" target="_blank" class="button">
+                    <span class="icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 28.9958V4.9125C4 4.07667 4.48167 3.34 5.19 3L19.1442 16.9542L5.19 30.9083C4.48167 30.5542 4 29.8317 4 28.9958ZM23.5642 21.3742L8.32083 30.1858L20.3483 18.1583L23.5642 21.3742ZM28.31 15.2683C28.7917 15.6508 29.1458 16.2458 29.1458 16.9542C29.1458 17.6625 28.8342 18.2292 28.3383 18.6258L25.0942 20.4958L21.5525 16.9542L25.0942 13.4125L28.31 15.2683ZM8.32083 3.7225L23.5642 12.5342L20.3483 15.75L8.32083 3.7225Z" fill="white"></path>
+                        </svg>
+                    </span>
+                    <div class="button-text google">
+                        <span>Get it on</span>
+                        <span>Google Play</span>
+                    </div>
+                </a>
+                <a href="https://apps.apple.com/ph/app/jollibee-philippines/id1508056939" target="_blank" class="button">
+                    <span class="icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.5058 27.625C25.33 29.3817 24.0833 31.0958 22.185 31.1242C20.2866 31.1667 19.6775 30.005 17.5241 30.005C15.3566 30.005 14.6908 31.0958 12.8916 31.1667C11.0358 31.2375 9.6333 29.2967 8.4433 27.5825C6.0208 24.0833 4.16497 17.6375 6.6583 13.3025C7.8908 11.1492 10.1008 9.78916 12.495 9.74666C14.3083 9.71833 16.0366 10.9792 17.1558 10.9792C18.2608 10.9792 20.3575 9.46333 22.5533 9.68999C23.4741 9.73249 26.0525 10.0583 27.71 12.495C27.5825 12.58 24.6358 14.3083 24.6641 17.8925C24.7066 22.1708 28.4183 23.6017 28.4608 23.6158C28.4183 23.715 27.8658 25.6558 26.5058 27.625ZM18.4166 4.95833C19.4508 3.78249 21.165 2.88999 22.5816 2.83333C22.7658 4.49083 22.1 6.16249 21.1083 7.35249C20.1308 8.55666 18.5158 9.49166 16.9291 9.36416C16.7166 7.73499 17.51 6.03499 18.4166 4.95833Z" fill=""></path>
+                        </svg>
+                    </span>
+                    <div class="button-text apple">
+                        <span>Download from</span>
+                        <span>App Store</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <audio id="downloadAudio" loop>
+        <source src="audio/bida-ang-saya.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Exclusive Promo Section -->
+    <section class="exclusive-promo">
+        <div class="container center-align">
+            <h2 class="section-title">Exclusive Promo</h2>
+            <div class="row">
+                <!-- Promo 1 -->
+                <div class="col s12 m6 l4">
+                    <a href="promo1.html">
+                        <img src="img-orders/Promo1.jpg" alt="Promo 1" class="promo-img">
+                    </a>
+                </div>
+                <!-- Promo 2 -->
+                <div class="col s12 m6 l4">
+                    <a href="promo2.html">
+                        <img src="img-orders/Promo2.webp" alt="Promo 2" class="promo-img">
+                    </a>
+                </div>
+                <!-- Promo 3 -->
+                <div class="col s12 m6 l4">
+                    <a href="promo3.html">
+                        <img src="img-orders/Promo3.jpg" alt="Promo 3" class="promo-img">
+                    </a>
+                </div>
+            </div>
+            <a href="promo.html" class="btn order-now">See All Promo</a>
+        </div>
+    </section>
+
+    <!-- Featured Menu Items Section -->
+    <section class="featured-menu">
+        <div class="container center-align">
+            <h2 class="section-title">Featured Menu Items</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col s12 m6 l4">
+                    <a href="https://www.jollibee.com.ph/menu/chickenjoy/" class="menu-card-link">
+                        <div class="menu-card" style="background-color: red;">
+                            <h5>Chicken Joy Bucket</h5>
+                            <p>Delight in our crispy, juicy fried chicken – perfect for sharing with the family.</p>
+                            <img src="img-orders/Chicken Joy Bucket.png" alt="Chicken Joy Bucket">
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="col s12 m6 l4">
+                    <a href="https://www.jollibee.com.ph/menu/jolly-spaghetti/" class="menu-card-link">
+                        <div class="menu-card" style="background-color: rgb(79, 138, 157);">
+                            <h5>Jolly Spaghetti</h5>
+                            <p>Sweet and cheesy spaghetti paired with hotdog slices for a unique twist.</p>
+                            <img src="img-orders/Jolly Spaghetti.webp" style="width: 250px; height: auto;" alt="Jolly Spaghetti">
+                        </div>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="col s12 m6 l4">
+                    <a href="https://www.jollibee.com.ph/menu/burgers/" class="menu-card-link">
+                        <div class="menu-card" style="background-color: #f0d86e;">
+                            <h5>Yumburger</h5>
+                            <p>Our signature burger with a savory patty and special dressing.</p>
+                            <img src="img-orders/Yumburger.png" style="width: 250px; height: auto;" alt="Yumburger">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://www.jollibee.com.ph/menu/" class="btn order-now">View Menu</a>
+        </div>
+    </section>
+    
+
+<!-- Footer -->
+    <footer class="page-footer red darken-4">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col l3 s12">
+                    <a href="#" class="brand-logo">
+                        <img src="img/jollibee.png" alt="Jollibee Logo" style="max-width: 150px;">
+                    </a>
+                </div>
+
+                <!-- Our Socials Section -->
+                <div class="col l3 s12">
+                    <h5 class="white-text">Our Socials</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/JollibeePhilippines/" class="grey-text text-lighten-3"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://x.com/Jollibee" class="grey-text text-lighten-3"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/jollibee/?hl=en" class="grey-text text-lighten-3"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- How to Order Section -->
+                <div class="col l3 s12">
+                    <h5 class="white-text">How to Order</h5>
+                    <ul>
+                        <li><a href="https://www.jollibee.com.ph/delivery/" class="grey-text text-lighten-3">Delivery</a></li>
+                        <li><a href="https://www.jollibee.com.ph/menu/" class="grey-text text-lighten-3">Menu</a></li>
+                        <li><a href="https://www.jollibeedelivery.com/home" class="grey-text text-lighten-3">Order Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us Section -->
+                <div class="col l3 s12">
+                    <h5 class="white-text">About Us</h5>
+                    <ul>
+                        <li><a href="redirecting.html" class="grey-text text-lighten-3">About Jollibee</a></li>
+                        <li><a href="redirecting2.html" class="grey-text text-lighten-3">About Our Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Copyright Section -->
+        <div class="footer-copyright">
+            <div class="container center-align">
+                <span class="grey-text text-lighten-4">© 2024 Jollibee. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JS and jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        // Initialize Side Navigation
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidenav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenav);
+        });
+
+        $(document).ready(function() {
+    // Show or hide the Scroll-to-Top button based on scroll position
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 700) {  // Show after 200px scroll
+            $('#scrollToTop').fadeIn();
+        } else {
+            $('#scrollToTop').fadeOut();
+        }
+    });
+
+    // Scroll smoothly to the top when the button is clicked
+    $('#scrollToTop').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 'smooth');
+        return false;
+        });
+    });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadAppBtn = document.getElementById('downloadAppBtn');
+            const downloadPopup = document.getElementById('downloadPopup');
+            const closePopupBtn = document.getElementById('closePopupBtn');
+    
+            // Show popup when download button is clicked
+            downloadAppBtn.addEventListener('click', function() {
+                downloadPopup.classList.add('show');
+            });
+    
+            // Close popup when close button is clicked
+            closePopupBtn.addEventListener('click', function() {
+                downloadPopup.classList.remove('show');
+            });
+    
+            // Close popup if user clicks outside the card
+            downloadPopup.addEventListener('click', function(event) {
+                if (event.target === downloadPopup) {
+                    downloadPopup.classList.remove('show');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const downloadAppBtn = document.getElementById('downloadAppBtn');
+        const downloadPopup = document.getElementById('downloadPopup');
+        const closePopupBtn = document.getElementById('closePopupBtn');
+        const backgroundAudio = document.getElementById('downloadAudio');
+
+        // Show popup and play audio when download button is clicked
+        downloadAppBtn.addEventListener('click', function() {
+            downloadPopup.classList.add('show');
+            backgroundAudio.play();
+        });
+
+        // Close popup and stop audio when close button is clicked
+        closePopupBtn.addEventListener('click', function() {
+            downloadPopup.classList.remove('show');
+            backgroundAudio.pause();
+            backgroundAudio.currentTime = 0; // Reset audio to start
+        });
+
+        // Close popup and stop audio if user clicks outside the card
+        downloadPopup.addEventListener('click', function(event) {
+            if (event.target === downloadPopup) {
+                downloadPopup.classList.remove('show');
+                backgroundAudio.pause();
+                backgroundAudio.currentTime = 0; // Reset audio to start
+            }
+        });
+    });
+    </script>
+</body>
+</html>

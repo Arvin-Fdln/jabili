@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollybee</title>
+    <link rel="icon" href="Jollibee_logo.svg.ico" type="x-icon">
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f43f3f;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #splash-message {
+            background: white;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        #timer {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="splash-message">
+        <h1>Disclaimer:</h1>
+        <h1>This website is a fan project designed for educational purposes only. I do not claim ownership of the the brand, its trademarks, or its content. All rights belong to their rightful owners.</h1>
+        <p>Redirecting to the main website...</p>
+        <p id="timer">10 seconds remaining</p>
+    </div>
+
+    <script>
+        // Timer countdown logic
+        let timeLeft = 10;
+        const timerElement = document.getElementById("timer");
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerElement.textContent = `${timeLeft} seconds remaining`;
+
+            if (timeLeft <= 0) {
+                clearInterval(countdown); // Stop the countdown
+            }
+        }, 1000);
+
+        // Redirect after 15 seconds
+        setTimeout(() => {
+            window.location.href = "homepage.html";
+        }, 10000);
+    </script>
+</body>
+</html>
